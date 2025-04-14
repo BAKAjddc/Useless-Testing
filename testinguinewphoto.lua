@@ -677,8 +677,12 @@ end
 local minSize = Vector2.new(1024, 768)
 local useMobileSizing
 
-if TrulyNot.AbsoluteSize.X < minSize.X and TrulyNot.AbsoluteSize.Y < minSize.Y then
-	useMobileSizing = true
+if TrulyNot and TrulyNot:IsA("GuiObject") then
+    if TrulyNot.AbsoluteSize.X < minSize.X and TrulyNot.AbsoluteSize.Y < minSize.Y then
+        useMobileSizing = true
+    end
+else
+    warn("TrulyNot is not a valid GUI object or does not exist.")
 end
 
 if UserInputService.TouchEnabled then
