@@ -660,14 +660,14 @@ end
 if gethui then
 	for _, Interface in ipairs(gethui():GetChildren()) do
 		if Interface.Name == TrulyNot.Name and Interface ~= TrulyNot then
-			Interface.Enabled = false
+			Interface.Transparency = 1
 			Interface.Name = "TrulyNot-Old"
 		end
 	end
 elseif not useStudio then
 	for _, Interface in ipairs(CoreGui:GetChildren()) do
 		if Interface.Name == TrulyNot.Name and Interface ~= TrulyNot then
-			Interface.Enabled = false
+			Interface.Transparency = 0
 			Interface.Name = "TrulyNot-Old"
 		end
 	end
