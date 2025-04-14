@@ -644,7 +644,7 @@ repeat
 	buildAttempts = buildAttempts + 1
 until buildAttempts >= 2
 
-TrulyNot.Enabled = false
+TrulyNot.Transparency = 0
 
 if gethui then
 	TrulyNot.Parent = gethui()
