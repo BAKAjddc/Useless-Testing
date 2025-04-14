@@ -618,7 +618,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local TrulyNot = useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://0")[1]
+local TrulyNot = useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://12710412615")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -638,7 +638,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, TrulyNot = TrulyNot, useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://0")[1]
+	toDestroy, TrulyNot = TrulyNot, useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://12710412615")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
