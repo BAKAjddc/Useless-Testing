@@ -618,7 +618,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local TrulyNot = useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://12710412615")[1]
+local TrulyNot = useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://0")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -638,7 +638,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, TrulyNot = TrulyNot, useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://12710412615")[1]
+	toDestroy, TrulyNot = TrulyNot, useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://0")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
@@ -1222,7 +1222,7 @@ end
 
 local function Maximise()
 	Debounce = true
-	Topbar.ChangeSize.Image = "rbxassetid://"..12710412615
+	Topbar.ChangeSize.Image = "rbxassetid://"..10137941941
 
 	TweenService:Create(Topbar.UIStroke, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {ImageTransparency = 0.6}):Play()
@@ -1377,7 +1377,7 @@ end
 
 local function Minimise()
 	Debounce = true
-	Topbar.ChangeSize.Image = "rbxassetid://"..12710412615
+	Topbar.ChangeSize.Image = "rbxassetid://"..11036884234
 
 	Topbar.UIStroke.Color = SelectedTheme.ElementStroke
 
@@ -1723,7 +1723,7 @@ function TrulyNotLibrary:CreateWindow(Settings)
 		if not Passthrough then
 			local AttemptsRemaining = math.random(2, 5)
 			TrulyNot.Enabled = false
-			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://12710412615")[1]
+			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://11380036235")[1]
 
 			KeyUI.Enabled = true
 
