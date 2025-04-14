@@ -210,7 +210,7 @@ if not requestsDisabled then
 						reporter.report("TrulyNot", Release, InterfaceBuild)
 					end)
 				else
-					warn("Failed to load or execute the reporter. \nPlease notify TrulyNot developers at sirius.menu/discord.")
+					warn("Failed to load or execute the script. \nPlease notify TrulyNot developers at https://discord.gg/UJx5xf4qWV")
 				end
 			end)
 			if debugX then warn('Finished Report') end
@@ -1026,7 +1026,7 @@ function TrulyNotLibrary:Notify(data) -- action e.g open messages
 
 		if data.Actions then
 			warn('TrulyNot | Not seeing your actions in notifications?')
-			print("Notification Actions are being sunset for now, keep up to date on when they're back in the discord. (sirius.menu/discord)")
+			print("Notification Actions are being sunset for now, keep up to date on when they're back in the discord. https://discord.gg/UJx5xf4qWV)")
 		end
 
 		-- Calculate textbounds and set initial values
@@ -1524,7 +1524,7 @@ function TrulyNotLibrary:CreateWindow(Settings)
 	if TrulyNot:FindFirstChild('Loading') then
 		if getgenv and not getgenv().rayfieldCached then
 			TrulyNot.Enabled = true
-			TrulyNot.Loading.Visible = true
+			TrulyNot.Loading.Visible = false
 
 			task.wait(1.4)
 			TrulyNot.Loading.Visible = false
@@ -1612,7 +1612,7 @@ function TrulyNotLibrary:CreateWindow(Settings)
 				task.wait(math.random(180, 600))
 				TrulyNotLibrary:Notify({
 					Title = "TrulyNot Interface",
-					Content = "Enjoying this UI library? Find it at sirius.menu/discord",
+					Content = "Join this server for future updates and support!\n\nhttps://discord.gg/UJx5xf4qWV",
 					Duration = 7,
 					Image = 4370033185,
 				})
