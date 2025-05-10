@@ -618,7 +618,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local TrulyNot = useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://10804731440")[1]
+local TrulyNot = useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://138323756026808")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -638,7 +638,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, TrulyNot = TrulyNot, useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://10804731440")[1]
+	toDestroy, TrulyNot = TrulyNot, useStudio and script.Parent:FindFirstChild('TrulyNot') or game:GetObjects("rbxassetid://138323756026808")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
@@ -1723,7 +1723,7 @@ function TrulyNotLibrary:CreateWindow(Settings)
 		if not Passthrough then
 			local AttemptsRemaining = math.random(2, 5)
 			TrulyNot.Enabled = false
-			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://11380036235")[1]
+			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://138323756026808")[1]
 
 			KeyUI.Enabled = true
 
